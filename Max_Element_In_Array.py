@@ -9,6 +9,9 @@ def find_max(array):
 
     return max_element
 
-array = [12, 45, 34, 6, 2] # example of an array i used
+array = [] # example of an array i used
 result = find_max(array)
-print(f"The maximum element in the array is {result}")
+if result == None:
+    print("There is no max element as the array is empty")
+else: 
+    print(f"The maximum element in the array is {result}")
