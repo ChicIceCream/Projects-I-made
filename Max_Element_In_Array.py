@@ -9,7 +9,7 @@ def find_max(array):
 
     return max_element
 
-array = [] # example of an array i used
+array = [2,5,24,22,4,,6] # example of an array i used
 result = find_max(array)
 if result == None:
     print("There is no max element as the array is empty")
