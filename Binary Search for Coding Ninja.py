@@ -1,17 +1,17 @@
 # Array submitted on Coding Ninja website
 # This binary search takes in input from the user on the array and target
 
-def binary_search(arr, target):
+def binary_search(list, target):
     
-    upperbound, lowerbound, found = len(arr) - 1, 0, False
+    upperbound, lowerbound, found = len(list) - 1, 0, False
     
     while lowerbound <= upperbound:
         index = (upperbound + lowerbound) // 2
 
-        if target == arr[index]:
+        if target == list[index]:
             found = True
             break
-        elif target > arr[index]:
+        elif target > list[index]:
             lowerbound = index + 1
         else:
             upperbound = index - 1
@@ -23,8 +23,8 @@ def binary_search(arr, target):
 
 #Input
 N = int(input())
-arr = list(map(int, input().split()))
+list = list(map(int, input().split()))
 target = int(input())
 
 #Output
-binary_search(arr, target)
+binary_search(list, target)
