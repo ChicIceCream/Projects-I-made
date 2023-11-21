@@ -6,7 +6,5 @@ def rotated_finder(array):
             print(index)
             break
 
-#! DOESNT WORK WHEN LIST IS IN ORDER
-#! FIX THIS
 list = [2,1,0,3,4,5,6]
 rotated_finder(list)

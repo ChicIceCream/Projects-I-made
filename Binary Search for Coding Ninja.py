@@ -1,10 +1,12 @@
 # Array submitted on Coding Ninja website
-# This binary search takes in input from the user on the array and target
+# This binary search takes in input from the user on the array and target and return what they asked for
 
+# Start of function
 def binary_search(arr, target):
     
     upperbound, lowerbound = len(arr) - 1, 0
     
+    # Start of loop for binary search
     while lowerbound <= upperbound:
         index = (upperbound + lowerbound) // 2
 
